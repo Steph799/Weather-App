@@ -1,8 +1,8 @@
- ## Open an account in AccuWeather (https://developer.accuweather.com/)
+ ### Open an account in AccuWeather (https://developer.accuweather.com/)
 
- ## After login, create the app: myApps->add a new app and follow the instructions (desktop application, programming language- javascript...)
+ ### After login, create the app: myApps->add a new app and follow the instructions (desktop application, programming language- javascript...)
 
- ## after creating the app, you will get an API key. Create a .env file and a property: REACT_APP_API_KEY. Assing it with your API key. 
+ ### after creating the app, you will get an API key. Create a .env file and a property: REACT_APP_API_KEY. Assing it with your API key. 
  
 Description: 
 Users can search for any city in the world and get the current weather and five days of the weather forecast.
