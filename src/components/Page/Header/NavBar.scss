@@ -1,0 +1,86 @@
+.navbar {
+  background-color: #32373b;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.linkSelected {
+  color: #f22b29;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.popupMsg {
+  text-align: center;
+  padding: 10px;
+}
+
+//--------------------------toggle checkbox--------------------------------------------------------
+input[type="checkbox"] {
+  position: relative;
+  width: 90px;
+  height: 30px;
+  -webkit-appearance: none;
+  border-radius: 15px;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background: #92b2cb;
+}
+
+input[type="checkbox"]:before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::before {
+  left: 60px;
+}
+
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+label {
+  position: absolute;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  pointer-events: none;
+}
+.onBtn {
+  bottom: 12px;
+  left: 14px;
+}
+
+.offBtn {
+  bottom: 12px;
+  right: 14px;
+}

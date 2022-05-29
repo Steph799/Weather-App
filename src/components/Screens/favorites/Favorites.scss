@@ -1,0 +1,40 @@
+.favoritesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardHeader,
+.cardDescription {
+    text-align: center;
+}
+
+.cardDescriptionContainer {
+    min-height: 2rem;
+}
+.cardHeader {
+    height: 90px;
+    h2,
+    h3 {
+        margin: 10px;
+    }
+}
+.cardDescription {
+    margin: 10px;
+    height: 70px;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.temp{
+    margin:5px;
+    font-size: 40px;
+}

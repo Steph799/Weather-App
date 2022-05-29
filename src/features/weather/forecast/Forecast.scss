@@ -1,0 +1,39 @@
+.forecast {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+    .forecastCard {
+        padding: 10px;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            time {
+                font-weight: 600;
+                font-size: 25px;
+                margin: 10px;
+            }
+        }
+        footer {
+            p {
+                text-align: center;
+                margin: 5px;
+            }
+            .iconWeather {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .temp {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            span {
+                font-weight: 600;
+                font-size: 25px;
+            }
+        }
+    }
+}

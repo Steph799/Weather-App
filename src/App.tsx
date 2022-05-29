@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import './App.scss';
+import Favorites from './components/Screens/favorites/Favorites';
+import NotFound from './components/Screens/notFound/NotFound';
+import NavBar from './components/Page/Header/NavBar';
+import Primary from './components/Screens/primary/Primary';
+import AppRoutes from './shared/routes';
 
 function App() {
+  const [popup, setPopup] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavBar popup={popup} setPopup={setPopup}  />
+      <Routes>
+        <Route path={AppRoutes.default} element={<Navigate replace to={AppRoutes.weather} />} />
+        <Route path={AppRoutes.weather} element={<Primary popup={popup} setPopup={setPopup}/>} />
+        <Route path={AppRoutes.favorites} element={<Favorites />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
