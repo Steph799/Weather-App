@@ -11,10 +11,11 @@ Clicking on a favorite city forecast will navigate to the main screen showing th
 
 Application APIs:
 In this app, I use 4 Accuweather APIs: 
-a) Autocomplete search - Returns a matching of the search text. 
-b) Current Conditions - Returns current conditions data for a specific location. 
-c) 5 Days of Daily Forecasts - Returns an array of daily forecasts for the next 5 days for a specific location. 
-d) Geoposition Search - Returns information about the current location by GeoPosition (user location).
+
+- Autocomplete search - Returns a matching of the search text. 
+- Current Conditions - Returns current conditions data for a specific location. 
+- 5 Days of Daily Forecasts - Returns an array of daily forecasts for the next 5 days for a specific location. 
+- Geoposition Search - Returns information about the current location by GeoPosition (user location).
 
 Programming language: Typescript.
 State management: Redux Toolkit.
